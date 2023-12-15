@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      body {
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+      }
+
+      .linha {
+        width: 200px;
+        height: 2px;
+        background-color: black;
+        margin: 10px 0;
+      }
+    </style>
+    <title>Design com JavaScript</title>
+  </head>
+  <body>
+    <div class="linha" id="linha1"></div>
+    <div class="linha" id="linha2"></div>
+    <script>
+      // Obtém as referências dos elementos pelo ID
+      var linha1 = document.getElementById("linha1");
+      var linha2 = document.getElementById("linha2");
+
+      // Aqui você pode adicionar lógica para manipular os elementos
+      // Por exemplo, alterar propriedades CSS dinamicamente
+      linha1.style.backgroundColor = "blue";
+      linha2.style.width = "150px";
+    </script>
+  </body>
+</html>
